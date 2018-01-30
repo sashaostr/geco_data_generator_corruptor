@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0cf3f012-927f-41af-8c2e-2eeff3e2ea6c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py" afterPath="$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geco_data_generator_corruptor/contdepfunct.py" afterPath="$PROJECT_DIR$/geco_data_generator_corruptor/contdepfunct.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py" afterPath="$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attrgenfunct.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="attrgenfunct.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/attrgenfunct.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="240" column="8" lean-forward="false" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
+            <state relative-caret-position="265">
+              <caret line="245" column="56" lean-forward="true" selection-start-line="245" selection-start-column="56" selection-end-line="245" selection-end-column="56" />
               <folding>
                 <element signature="e#1079#1092#0" expanded="true" />
               </folding>
@@ -97,13 +95,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basefunctions.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="basefunctions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="19" />
+              <caret line="552" column="61" lean-forward="false" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
               <folding>
                 <element signature="e#581#634#0" expanded="true" />
+                <marker date="1517336082495" expanded="true" signature="17490:19254" ph="..." />
+                <marker date="1517336082495" expanded="true" signature="18724:19254" ph="..." />
               </folding>
             </state>
           </provider>
@@ -139,6 +139,7 @@
       <find>raise Exception, 'Value of &quot;%s&quot; is None' % (variable</find>
       <find>raise Exception</find>
       <find>print(</find>
+      <find>raise IOError</find>
     </findStrings>
     <replaceStrings>
       <replace>print(</replace>
@@ -154,9 +155,9 @@
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/generate-data-english.py" />
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/generate-data-japanese.py" />
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/generator.py" />
-        <option value="$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py" />
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py" />
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/contdepfunct.py" />
+        <option value="$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py" />
       </list>
     </option>
   </component>
@@ -265,11 +266,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -333,16 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#581#634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/generate-data-japanese.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -379,10 +370,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/attrgenfunct.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="240" column="8" lean-forward="false" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
+        <state relative-caret-position="265">
+          <caret line="245" column="56" lean-forward="true" selection-start-line="245" selection-start-column="56" selection-end-line="245" selection-end-column="56" />
           <folding>
             <element signature="e#1079#1092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="552" column="61" lean-forward="false" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
+          <folding>
+            <element signature="e#581#634#0" expanded="true" />
+            <marker date="1517336082495" expanded="true" signature="17490:19254" ph="..." />
+            <marker date="1517336082495" expanded="true" signature="18724:19254" ph="..." />
           </folding>
         </state>
       </provider>
