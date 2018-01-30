@@ -30,7 +30,7 @@
 
 import random
 import string
-import geco_data_generator_corruptor.basefunctions
+from geco_data_generator_corruptor import basefunctions
 
 # -----------------------------------------------------------------------------
 #

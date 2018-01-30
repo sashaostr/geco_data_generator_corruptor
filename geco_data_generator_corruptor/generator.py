@@ -20,7 +20,7 @@
 
 import random
 
-import geco_data_generator_corruptor.basefunctions
+from geco_data_generator_corruptor import basefunctions
 
 # =============================================================================
 # Classes for generating a single attribute (field) of the data set
@@ -66,7 +66,7 @@ class GenerateAttribute:
 
       else:
         raise Exception( 'Illegal constructor argument keyword: "%s"' % \
-              (str(keyword))
+              (str(keyword)))
 
     basefunctions.check_is_non_empty_string('attribute_name',
                                             self.attribute_name)
@@ -1705,8 +1705,8 @@ class GenerateDataSet:
       elif (keyword.startswith('attribute_name')):
         basefunctions.check_is_list('attribute_name_list', value)
         if not value:
-          raise Exception( 'attribute_name_list is empty: %s' % (type(value)) 
-        self.attribute_name_list = value)
+          raise Exception( 'attribute_name_list is empty: %s' % (type(value)))
+        self.attribute_name_list = value
 
       elif (keyword.startswith('attribute_data')):
         basefunctions.check_is_list('attribute_data_list', value)
@@ -1756,8 +1756,8 @@ class GenerateDataSet:
         raise Exception( 'Attribute given has the same name as the record ' + \
                          'identifier attribute')
       if (attr_name in attr_name_set):
-        raise Exception( 'Attribute name "%s" is given twice' % (attr_name)
-      attr_name_set.add(attr_name))
+        raise Exception( 'Attribute name "%s" is given twice' % (attr_name))
+      attr_name_set.add(attr_name)
     assert len(attr_name_set) == len(self.attribute_name_list)
 
     # Check if the attribute names listed in the attribute data list are all
