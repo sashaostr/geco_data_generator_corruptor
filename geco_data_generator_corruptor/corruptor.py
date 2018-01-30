@@ -21,7 +21,7 @@
 import math
 import random
 
-import basefunctions
+import geco_data_generator_corruptor.basefunctions
 
 # =============================================================================
 # Helper functions to randomly select a position for where to apply a

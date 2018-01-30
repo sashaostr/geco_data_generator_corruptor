@@ -12,12 +12,12 @@
 
 # Import the necessary other modules of the data generator
 #
-import basefunctions  # Helper functions
-import attrgenfunct   # Functions to generate independent attribute values
-import contdepfunct   # Functions to generate dependent continuous attribute
+import geco_data_generator_corruptor.basefunctions  # Helper functions
+import geco_data_generator_corruptor.attrgenfunct   # Functions to generate independent attribute values
+import geco_data_generator_corruptor.contdepfunct   # Functions to generate dependent continuous attribute
                       # values
-import generator      # Main classes to generate records and the data set
-import corruptor      # Main classes to corrupt attribute values and records
+import geco_data_generator_corruptor.generator      # Main classes to generate records and the data set
+import geco_data_generator_corruptor.corruptor      # Main classes to corrupt attribute values and records
 
 import random
 random.seed(42)  # Set seed for random generator, so data generation can be

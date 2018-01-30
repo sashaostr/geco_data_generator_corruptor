@@ -20,7 +20,7 @@
 
 import random
 
-import basefunctions
+import geco_data_generator_corruptor.basefunctions
 
 # =============================================================================
 # Classes for generating a single attribute (field) of the data set
