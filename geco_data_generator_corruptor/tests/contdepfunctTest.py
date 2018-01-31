@@ -91,7 +91,7 @@ class TestCase(unittest.TestCase):
     test_res_list = []  # The test results, one element per element in the test
                         # data dictionary
 
-    for (test_method_names, test_method_data) in test_data.iteritems():
+    for (test_method_names, test_method_data) in test_data.items():
       test_method_name = test_method_names[2]
       print 'Testing arguments for method/function:', test_method_name
 

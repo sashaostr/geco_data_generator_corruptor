@@ -438,7 +438,7 @@ class TestCase(unittest.TestCase):
 
     # Do tests on all generated records
     #
-    for (rec_id,rec_list) in rec_dict.iteritems():
+    for (rec_id,rec_list) in rec_dict.items():
       if (len(rec_list) != len(attr_name_list)):
         passed = False
         test_res_list.append('  Record with identifier "%s" contains wrong' % \

@@ -1764,7 +1764,7 @@ class CorruptDataSet:
     # Generate a histogram of number of duplicates per record
     #
     dup_histo = {}
-    for (org_rec_id_to_mod, num_dups) in dup_rec_num_dict.iteritems():
+    for (org_rec_id_to_mod, num_dups) in dup_rec_num_dict.items():
       dup_count = dup_histo.get(num_dups, 0) + 1
       dup_histo[num_dups] = dup_count
     print('Distribution of number of original records with certain number ' + \
@@ -1781,7 +1781,7 @@ class CorruptDataSet:
 
     # Main loop over all original records for which to generate duplicates - -
     #
-    for (org_rec_id_to_mod, num_dups) in dup_rec_num_dict.iteritems():
+    for (org_rec_id_to_mod, num_dups) in dup_rec_num_dict.items():
       assert (num_dups > 0) and (num_dups <= self.max_num_dup_per_rec)
 
       print()

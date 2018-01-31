@@ -200,7 +200,7 @@ class GenerateFreqAttribute(GenerateAttribute):
 
     # Generate a list of values according to their counts
     #
-    for (attr_val, val_count) in val_dict.iteritems():
+    for (attr_val, val_count) in val_dict.items():sssssssssssssssssssss
 
       # Append value as many times as given in their counts
       #
@@ -587,7 +587,7 @@ class GenerateCateCateCompoundAttribute(GenerateCompoundAttribute):
       #
       cate_attr2_val_list = []
 
-      for (cate_attr2_val, val2_count) in this_cate_val2_dict.iteritems():
+      for (cate_attr2_val, val2_count) in this_cate_val2_dict.items():
 
         # Append value as many times as given in their counts
         #
@@ -606,7 +606,7 @@ class GenerateCateCateCompoundAttribute(GenerateCompoundAttribute):
     #
     cate_attr1_val_list = []
 
-    for (cate_attr1_val, val1_count) in cate_val1_dict.iteritems():
+    for (cate_attr1_val, val1_count) in cate_val1_dict.items():
 
       # Append value as many times as given in their counts
       #
@@ -873,7 +873,7 @@ class GenerateCateContCompoundAttribute(GenerateCompoundAttribute):
     #
     cate_attr_val_list = []
 
-    for (cate_attr_val, val_count) in cate_val_dict.iteritems():
+    for (cate_attr_val, val_count) in cate_val_dict.items():
 
       # Append value as many times as given in their counts
       #
@@ -1259,7 +1259,7 @@ class GenerateCateCateContCompoundAttribute(GenerateCompoundAttribute):
       #
       cate_attr2_val_list = []
 
-      for (cate_attr2_val, val2_count) in this_cate_val2_dict.iteritems():
+      for (cate_attr2_val, val2_count) in this_cate_val2_dict.items():
 
         # Append value as many times as given in their counts
         #
@@ -1280,7 +1280,7 @@ class GenerateCateCateContCompoundAttribute(GenerateCompoundAttribute):
     #
     cate_attr1_val_list = []
 
-    for (cate_attr1_val, val1_count) in cate_val1_dict.iteritems():
+    for (cate_attr1_val, val1_count) in cate_val1_dict.items():
 
       # Append value as many times as given in their counts
       #

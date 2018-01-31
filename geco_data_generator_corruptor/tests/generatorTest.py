@@ -970,7 +970,7 @@ class TestCase(unittest.TestCase):
     test_res_list = []  # The test results, one element per element in the test
                         # data dictionary
 
-    for (test_method_names, test_method_data) in test_data.iteritems():
+    for (test_method_names, test_method_data) in test_data.items():
 
       test_type =                    test_method_data[0]
       method_keyword_argument_list = test_method_data[1]
