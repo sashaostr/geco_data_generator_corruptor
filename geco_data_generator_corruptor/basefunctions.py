@@ -55,7 +55,7 @@ def check_is_unicode_string(variable, value):
 
   check_is_non_empty_string('variable', variable)
 
-  if (not isinstance(value, unicode)):
+  if (not isinstance(value, str)):
     raise Exception('Value of "%s" is not a Unicode string: %s (%s)' % \
                      (variable, str(value), type(value)))
 
@@ -70,7 +70,7 @@ def check_is_string_or_unicode_string(variable, value):
 
   check_is_non_empty_string('variable', variable)
 
-  if ((not isinstance(value, unicode)) and (not isinstance(value, str))):
+  if ((not isinstance(value, str)) and (not isinstance(value, str))):
     raise Exception('Value of "%s" is neither a string nor a Unicode ' % \
                      (variable) + 'string: %s (%s)' % (str(value), type(value)))
 
