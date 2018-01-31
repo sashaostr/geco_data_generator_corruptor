@@ -175,7 +175,7 @@ class GenerateFreqAttribute(GenerateAttribute):
     for rec_list in freq_file_data:
       if (len(rec_list) != 2):
         raise Exception( 'Illegal format in frequency file %s: %s' % \
-                         (self.freq_file_name, line))
+                         (self.freq_file_name, rec_list))
       line_val =  rec_list[0].strip()
       try:
         line_count = int(rec_list[1])
