@@ -200,7 +200,7 @@ class GenerateFreqAttribute(GenerateAttribute):
 
     # Generate a list of values according to their counts
     #
-    for (attr_val, val_count) in val_dict.items():sssssssssssssssssssss
+    for (attr_val, val_count) in val_dict.items():
 
       # Append value as many times as given in their counts
       #
