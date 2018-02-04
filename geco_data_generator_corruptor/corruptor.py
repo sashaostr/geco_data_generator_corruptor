@@ -1713,7 +1713,7 @@ class CorruptDataSet:
                            # records, value their number of duplicates
     total_num_dups = 0     # Total number of duplicates generated
 
-    org_rec_id_list = rec_dict.keys()
+    org_rec_id_list = list(rec_dict.keys())
     random.shuffle(org_rec_id_list)
 
     org_rec_i = 0  # Loop counter over which record to assign duplicates to

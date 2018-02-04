@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf3f012-927f-41af-8c2e-2eeff3e2ea6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geco_data_generator_corruptor/lookup-files/ocr-variations-hebrew.csv" afterPath="$PROJECT_DIR$/geco_data_generator_corruptor/lookup-files/ocr-variations-hebrew.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py" afterPath="$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customer_data_generators/customer_email1/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="264" column="10" lean-forward="false" selection-start-line="264" selection-start-column="10" selection-end-line="264" selection-end-column="10" />
+            <state relative-caret-position="311">
+              <caret line="217" column="23" lean-forward="true" selection-start-line="216" selection-start-column="3" selection-end-line="217" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="corruptor.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="corruptor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="632" column="40" lean-forward="false" selection-start-line="632" selection-start-column="40" selection-end-line="632" selection-end-column="40" />
+            <state relative-caret-position="175">
+              <caret line="1715" column="43" lean-forward="false" selection-start-line="1715" selection-start-column="43" selection-end-line="1715" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -85,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ocr-variations-hebrew.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ocr-variations-hebrew.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/lookup-files/ocr-variations-hebrew.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -155,8 +155,8 @@
       <find>nothing_corruptor</find>
       <find>ocr-variations.csv</find>
       <find>CorruptValueOCR</find>
-      <find>sub_tra_edit_corruptor</find>
       <find>var_val</find>
+      <find>sub_tra_edit_corruptor</find>
     </findStrings>
     <replaceStrings>
       <replace>print(</replace>
@@ -184,9 +184,9 @@
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/generator.py" />
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/lookup-files/ocr-variations.csv" />
         <option value="$PROJECT_DIR$/customer_data_generators/customer_email1/run.py" />
-        <option value="$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py" />
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py" />
         <option value="$PROJECT_DIR$/geco_data_generator_corruptor/lookup-files/ocr-variations-hebrew.csv" />
+        <option value="$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py" />
       </list>
     </option>
   </component>
@@ -894,24 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customer_data_generators/customer_email1/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="264" column="10" lean-forward="false" selection-start-line="264" selection-start-column="10" selection-end-line="264" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="632" column="40" lean-forward="false" selection-start-line="632" selection-start-column="40" selection-end-line="632" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/basefunctions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-364">
@@ -926,6 +908,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer_data_generators/customer_email1/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="217" column="23" lean-forward="true" selection-start-line="216" selection-start-column="3" selection-end-line="217" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/corruptor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1715" column="43" lean-forward="false" selection-start-line="1715" selection-start-column="43" selection-end-line="1715" selection-end-column="43" />
           <folding />
         </state>
       </provider>
