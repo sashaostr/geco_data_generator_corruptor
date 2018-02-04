@@ -114,7 +114,7 @@ last_name_misspell_corruptor = corruptor.CorruptCategoricalValue(lookup_file_nam
                                                                unicode_encoding = unicode_encoding_used)
 
 ocr_corruptor = corruptor.CorruptValueOCR(position_function = corruptor.position_mod_uniform,
-                                       lookup_file_name = pr.resource_filename('geco_data_generator_corruptor.lookup-files','ocr-variations.csv'),
+                                       lookup_file_name = pr.resource_filename('geco_data_generator_corruptor.lookup-files','ocr-variations-hebrew.csv'),
                                        has_header_line = False,
                                        unicode_encoding = unicode_encoding_used)
 
@@ -212,13 +212,13 @@ email_data_corruptor = corruptor.CorruptDataSet(\
 
 try:
     rec_dict = test_data_generator.generate()
-    print rec_dict
+    print(rec_dict)
 
     crm_rec_dict = crm_data_corruptor.corrupt_records(rec_dict.copy())
-    print crm_rec_dict
+    print(crm_rec_dict)
 
     email_rec_dict = email_data_corruptor.corrupt_records(rec_dict.copy())
-    print email_rec_dict
+    print(email_rec_dict)
 
 
 
@@ -260,9 +260,9 @@ try:
     # print 'generate records: %s' % len(rec_dict)
 
 except Exception as exce_value:  # Something bad happened
-    print 'generator.generate() raised Exception: "%s"' % str(exce_value)
+    print('generator.generate() raised Exception: "%s"' % str(exce_value))
     tb = traceback.format_exc()
-    print tb
+    print(tb)
 
 
 

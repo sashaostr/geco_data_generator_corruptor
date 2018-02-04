@@ -592,7 +592,7 @@ class CorruptValueOCR(CorruptValue):
 
     self.lookup_file_name = None
     self.has_header_line =  None
-    self.unicode_encoding = None
+    self.unicode_encoding = 'utf-8s'
     self.ocr_val_dict =     {}  # The dictionary to hold the OCR variations
     self.name =             'OCR value'
 
