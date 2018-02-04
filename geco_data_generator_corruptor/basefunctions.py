@@ -317,7 +317,7 @@ def check_unicode_encoding_exists(unicode_encoding_str):
 
 # -----------------------------------------------------------------------------
 
-def char_set_ascii(s):
+def char_set_ascii_eng(s):
   """Determine if the input string contains digits, letters, or both, as well
      as whitespaces or not.
 
@@ -350,12 +350,77 @@ def char_set_ascii(s):
 
   # Check if string contains letters only, digits only, or both
   #
+  chars_heb = set(map(chr, range(ord('א'), ord('ת') + 1)))
+  chars_currencies = {'₪', '$', '€', '£', '₣', '¥'}
+  chars_special = {'\u200e', '\u200f', '\n'}
+  chars_eng = set(map(chr, range(ord('A'), ord('Z') + 1)))
+  other_chars = set(map(chr, range(ord(' '), ord('/') + 1)))
+  chars_digits = set(map(chr, range(ord('0'), ord('9') + 1)))
+  chars = sorted(chars_eng | chars_heb | chars_currencies | chars_special)
+
   if (check_str.isdigit() == True):
-    char_set = '0123456789'
+    char_set = "".join(chars_digits)
   elif (check_str.isalpha() == True):
-    char_set = 'abcdefghijklmnopqrstuvwxyz'
+    char_set = "".join(chars_heb)
   else:
-    char_set = 'abcdefghijklmnopqrstuvwxyz0123456789'
+    char_set = "".join(sorted(chars_eng|other_chars|chars_digits))
+
+  if (includes_spaces == True):
+    char_set += ' '
+
+  return char_set
+
+# -----------------------------------------------------------------------------
+
+
+def char_set_ascii_hebrew(s):
+  """Determine if the input string contains digits, letters, or both, as well
+     as whitespaces or not.
+
+     Returns a string containing the set of corresponding characters.
+  """
+
+  check_is_string_or_unicode_string('s', s)
+
+  if (len(s) == 0):
+    return ''
+
+  if (' ' in s):
+    includes_spaces = True
+  else:
+    includes_spaces = False
+
+  # Remove whitespaces
+  #
+  check_str = s.replace(' ','')
+
+  # Check if string contains characters other than alpha-numeric characters
+  #
+  if check_str.isalnum() == False:
+    return ''
+
+    # Return an empty string rather than stopping program
+    #
+    #raise Exception, 'The string "%s" contains characters other than ' % \
+    #                 (check_str) + 'alpha numeric and whitespace'
+
+  # Check if string contains letters only, digits only, or both
+  #
+
+  chars_heb = set(map(chr, range(ord('א'), ord('ת') + 1)))
+  chars_currencies = {'₪', '$', '€', '£', '₣', '¥'}
+  chars_special = {'\u200e', '\u200f', '\n'}
+  chars_eng = set(map(chr, range(ord('A'), ord('Z') + 1)))
+  other_chars = set(map(chr, range(ord(' '), ord('/') + 1)))
+  chars_digits = set(map(chr, range(ord('0'), ord('9') + 1)))
+  chars = sorted(chars_eng | chars_heb | chars_currencies | chars_special)
+
+  if (check_str.isdigit() == True):
+    char_set = "".join(chars_digits)
+  elif (check_str.isalpha() == True):
+    char_set = "".join(chars_heb)
+  else:
+    char_set = "".join(sorted(chars_heb|other_chars|chars_digits))
 
   if (includes_spaces == True):
     char_set += ' '
