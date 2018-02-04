@@ -88,8 +88,8 @@
       <file leaf-file-name="ocr-variations-hebrew.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/lookup-files/ocr-variations-hebrew.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -924,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geco_data_generator_corruptor/lookup-files/ocr-variations-hebrew.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
