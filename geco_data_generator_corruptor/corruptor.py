@@ -707,8 +707,8 @@ class CorruptValueOCR(CorruptValue):
         # Randomly select one of the possible modifications that can be applied
         #
         mod_to_apply = random.choice(mod_options)
-        assert mod_to_apply[0] in self.ocr_val_dict.keys()
-        assert mod_to_apply[2] in self.ocr_val_dict.keys()
+        assert mod_to_apply[0] in list(self.ocr_val_dict.keys())
+        assert mod_to_apply[2] in list(self.ocr_val_dict.keys())
 
         mod_str = in_str[:mod_pos] + mod_to_apply[2] + \
                   in_str[mod_pos+mod_to_apply[1]:]
@@ -1747,7 +1747,7 @@ class CorruptDataSet:
     # Deal with the case where every original record has a number of duplicates
     # but not enough duplicates are generated in total
     #
-    org_rec_id_list = rec_dict.keys()
+    org_rec_id_list = list(rec_dict.keys())
     random.shuffle(org_rec_id_list)
 
     while (total_num_dups < self.number_of_mod_records):
@@ -1769,7 +1769,7 @@ class CorruptDataSet:
       dup_histo[num_dups] = dup_count
     print('Distribution of number of original records with certain number ' + \
           'of duplicates:')
-    dup_histo_keys = dup_histo.keys()
+    dup_histo_keys = list(dup_histo.keys())
     dup_histo_keys.sort()
     for num_dups in dup_histo_keys:
       print(' Number of records with %d duplicates: %d' % \
@@ -1816,7 +1816,7 @@ class CorruptDataSet:
         # that can be modified
         #
         attr_mod_count_dict = {}
-        for attr_name in self.attr_mod_prob_dict.keys():
+        for attr_name in list(self.attr_mod_prob_dict.keys()):
           attr_mod_count_dict[attr_name] = 0
 
         # Abort generating modifications after a larger number of tries to
