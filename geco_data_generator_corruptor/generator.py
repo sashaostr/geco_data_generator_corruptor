@@ -1840,7 +1840,7 @@ class GenerateDataSet:
 
   # ---------------------------------------------------------------------------
 
-  def generate(self):
+  def generate(self, verbose=False):
     """Method which runs the generation process and generates the specified
        number of records.
 
@@ -1915,9 +1915,10 @@ class GenerateDataSet:
 
       rec_dict[rec_id_str] = this_rec_list
 
-      print('Generated record with ID: %s' % (rec_id_str))
-      print('  %s' % (str(this_rec_list)))
-      print()
+      if verbose:
+        print('Generated record with ID: %s' % (rec_id_str))
+        print('  %s' % (str(this_rec_list)))
+        print()
 
     print('Generated %d records' % (self.number_of_records))
     print()
